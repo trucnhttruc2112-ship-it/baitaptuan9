@@ -1,0 +1,37 @@
+    <!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Danh Sách Sản Phẩm & Dịch Vụ Du Lịch</title>
+  <!-- Liên kết tới file style.css -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Khám Phá Du Lịch Vùng Miền Việt Nam</h1>
+    <p>Danh sách tour & dịch vụ được render tự động bằng vòng lặp JavaScript</p>
+  </header>
+
+  <main class="container">
+    <!-- Thanh lọc vùng miền -->
+    <div class="filter-bar">
+      <button class="filter-btn active" onclick="locSanPham('Tất cả', this)">Tất cả</button>
+      <button class="filter-btn" onclick="locSanPham('Miền Bắc', this)">Miền Bắc</button>
+      <button class="filter-btn" onclick="locSanPham('Miền Trung', this)">Miền Trung</button>
+      <button class="filter-btn" onclick="locSanPham('Miền Nam', this)">Miền Nam</button>
+    </div>
+
+    <!-- KHUNG CHỨA SẢN PHẨM: JS sẽ tự động lặp và đổ thẻ HTML vào đây -->
+    <div id="product-list" class="product-grid"></div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Nguyễn Hồng Thanh Trúc - MSSV: 125000161</p>
+  </footer>
+
+  <!-- Liên kết tới file script.js -->
+  <script src="script.js"></script>
+</body>
+</html>
